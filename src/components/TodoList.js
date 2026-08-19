@@ -29,11 +29,6 @@ function TodoList() {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        onKeyDown={(event) => {
-          if (event.key === 'Enter') {
-            handleSubmit();
-          }
-        }}
       />
 
       <button onClick={handleSubmit}>Add Todo</button>
